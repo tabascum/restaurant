@@ -22,4 +22,8 @@ main {
   height: 100vh;
   background: scroll center url("src/img/oquintal.jpg");
   background-size: cover;
+  filter: brightness(70%);
+}
+
+section > article {
 }
