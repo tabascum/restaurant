@@ -6,10 +6,20 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Red Hat Display", sans-serif;
+:root {
+  --dark: #282929;
+  --text: #ddd;
 }
 
-section {
-  background-image: url("src/img/oquintal.jpg") center;
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--dark);
+  text-shadow: var(--dark);
+  color: var(--text);
+}
+
+main {
+  height: 100vh;
+  background: scroll center url("src/img/oquintal.jpg");
+  background-size: cover;
 }
