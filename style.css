@@ -7,23 +7,58 @@
 }
 
 :root {
-  --dark: #282929;
-  --text: #ddd;
+  --dark: #141111;
+  --text: #f1f1f1;
 }
 
 body {
   font-family: "Red Hat Display", sans-serif;
   background-color: var(--dark);
-  text-shadow: var(--dark);
   color: var(--text);
 }
 
 main {
-  height: 100vh;
-  background: scroll center url("src/img/oquintal.jpg");
+  background: fixed center url("src/img/oquintal.jpg");
   background-size: cover;
-  filter: brightness(70%);
+  height: 100vh;
+}
+
+main > section > header {
+  display: flex;
+  align-items: center;
+  padding: 2rem 7rem;
+  justify-content: space-between;
+}
+
+.header > nav {
+  gap: 1rem;
+  display: flex;
+}
+
+.header > nav > a {
+  font-size: 1.2rem;
+  color: var(--text)
+  text-decoration: none;
+  
+}
+
+section > article > h1 {
+  font-size: 2rem;
 }
 
 section > article {
+  text-shadow: .1rem .1rem  .1rem var(--dark);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  margin: 0 7rem;
+  gap: 2rem;
+  backdrop-filter: blur(.5rem);
+}
+
+
+aside > figure > img {
+  width: 40%;
 }

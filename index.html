@@ -16,33 +16,49 @@
 
 <body>
     <main>
-        <header>
-            <figure>
-                <img src="src/img/oquintal-small-logo.png" alt="">
-            </figure>
-            <nav>
-                <ul>
-                    <li>Menu</li>
-                    <li>Reservas</li>
-                    <li>Contactos</li>
-                </ul>
-            </nav>
-        </header>
         <section>
-            <article>
-                <h1>O Quintal</h1>
-                <h3>O Quintal é um restaurante situado na Amadora onde se privilegia a partilha e o estar à mesa com
-                    quem
-                    mais
-                    gostamos. Desfrute dos nossos pratos do dia</h3>
-            </article>
+            <header class="header">
+                <figure>
+                    <img src="src/img/oquintal-small-logo.png" alt="">
+                </figure>
+                <nav>
+                    <a class="menu" href="">O Menu</a>
+                    <a href="">A Reserva</a>
+                    <a href="">Os Contactos</a>
+                </nav>
+            </header>
+            <section>
+                <article>
+                    <h1>O Quintal</h1>
+                    <h3>O Quintal é um restaurante situado na Amadora onde se privilegia a partilha e o estar à mesa
+                        com
+                        quem
+                        mais
+                        gostamos.</h3>
+                    <h3>Desfrute dos nossos pratos do dia</h3>
+                </article>
+            </section>
         </section>
     </main>
+    <figure>
+        <img src="src/img/oquintal-menu.jpg" alt="">
+    </figure>
+    <figure>
+        <img src="src/img/oquintal-bebidas.jpg" alt="">
+    </figure>
+    </aside>
     <footer>
         <figure>
             <img src="src/img/p2020.jpg" alt="">
         </figure>
     </footer>
+
+    <script>
+        document.querySelector(".menu").addEventListener("click", () => {
+            document.getElementById("menu").classList = "active"
+        }
+        );
+    </script>
 </body>
 
 </html>
