@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-pt">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="O Quintal é um restaurante onde se privilegia a partilha e o estar à mesa com quem mais gostamos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon//favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link href="https://api.fontshare.com/v2/css?f[]=red-hat-display@300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Restaurante O Quintal</title>
+    <title>O Quintal - O Quintal é um restaurante onde se privilegia a partilha e o estar à mesa
+        com
+        quem
+        mais
+        gostamos.</title>
 </head>
 
 <body>
@@ -22,43 +30,61 @@
                     <img src="src/img/oquintal-small-logo.png" alt="">
                 </figure>
                 <nav>
-                    <a class="menu" href="">O Menu</a>
-                    <a href="">A Reserva</a>
-                    <a href="">Os Contactos</a>
+                    <a href="">Menu</a>
+                    <a href="">Onde Estamos</a>
+                    <a href="">Contactos</a>
                 </nav>
             </header>
             <section>
                 <article>
-                    <h1>O Quintal</h1>
+                    <h1>O QUINTAL</h1>
                     <h3>O Quintal é um restaurante situado na Amadora onde se privilegia a partilha e o estar à mesa
                         com
                         quem
                         mais
-                        gostamos.</h3>
-                    <h3>Desfrute dos nossos pratos do dia</h3>
+                        gostamos.
+                        Desfrute dos nossos pratos do dia</h3>
                 </article>
             </section>
         </section>
     </main>
-    <figure>
-        <img src="src/img/oquintal-menu.jpg" alt="">
-    </figure>
-    <figure>
-        <img src="src/img/oquintal-bebidas.jpg" alt="">
-    </figure>
-    </aside>
-    <footer>
-        <figure>
-            <img src="src/img/p2020.jpg" alt="">
-        </figure>
-    </footer>
 
-    <script>
-        document.querySelector(".menu").addEventListener("click", () => {
-            document.getElementById("menu").classList = "active"
-        }
-        );
-    </script>
+    <section class="menu">
+        <div>
+            <h1>Siga-nos nas redes sociais</h1>
+            <a class="facebook-link" href="https://pt-pt.facebook.com/oquintalrest/" target="_blank"><i
+                    class="fa-brands fa-square-facebook"></i></a>
+            <a class="instagram-link" href="https://www.instagram.com/oquintalrestaurante_/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div>
+            <h1>Contacte-nos</h1>
+            <i class="fa-solid fa-phone"></i> 21 493 0380
+        </div>
+        <div>
+            <h1>Faça aqui a sua reserva</h1>
+            <a class="whatsapp"
+                href="https://api.whatsapp.com/send?phone=351913020117&text=Ol%C3%A1%2C%20achei%20o%20seu%20whatsapp%20pelo%20seu%20link"
+                target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div>
+            <article>
+                <a href=""><i class="fa-solid fa-chevron-right"></i> O Quintal</a>
+                <a href=""><i class="fa-solid fa-chevron-right"></i> Mapa do Site</a>
+                <a href=""><i class="fa-solid fa-chevron-right"></i> Menções Legais</a>
+            </article>
+            <img src="src/img/oquintal-medium-logo.png" alt="">
+            <figure>
+                <h1>Com o apoio:</h1>
+                <img src="src/img/p2020.jpg" alt="">
+            </figure>
+        </div>
+        <p> &#169; O Quintal 2022 Todos os direitos reservados</p>
+    </footer>
 </body>
 
 </html>

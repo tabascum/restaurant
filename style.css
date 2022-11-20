@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+
 *,
 *::after,
 *::before {
@@ -12,21 +14,21 @@
 }
 
 body {
-  font-family: "Red Hat Display", sans-serif;
+  background: fixed center url("src/img/oquintal.jpg");
+  font-family: 'Oswald', sans-serif;
   background-color: var(--dark);
+  background-size: cover;
   color: var(--text);
 }
 
 main {
-  background: fixed center url("src/img/oquintal.jpg");
-  background-size: cover;
   height: 100vh;
 }
 
 main > section > header {
   display: flex;
-  align-items: center;
   padding: 2rem 7rem;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -35,30 +37,95 @@ main > section > header {
   display: flex;
 }
 
-.header > nav > a {
-  font-size: 1.2rem;
-  color: var(--text)
-  text-decoration: none;
-  
-}
-
 section > article > h1 {
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 5rem;
 }
 
 section > article {
-  text-shadow: .1rem .1rem  .1rem var(--dark);
   display: flex;
-  align-items: center;
+  padding: 2rem;
+  margin: 0 20rem;
+  font-size: 1.2rem;
+  font-weight: 300;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem;
-  margin: 0 7rem;
-  gap: 2rem;
-  backdrop-filter: blur(.5rem);
+  backdrop-filter: blur(.3rem);
+  text-shadow: .1rem .1rem .1rem var(--dark);
 }
 
+a {
+  border: none;
+  transition: .5s;
+  font-size: 1.3rem;
+  color: var(--text)
+  text-decoration: none;
+  background: transparent;
+  border-block-end: solid 1px transparent;
+}
 
-aside > figure > img {
-  width: 40%;
+a:hover {
+  cursor: pointer;
+  border-block-end: solid 1px var(--text);
+}
+
+.menu {
+  display: flex;
+  min-height: 40vh;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--dark);
+}
+
+.menu > div {
+  padding: 2rem;
+  cursor: pointer;
+  transition: .5s;
+  font-size: 1.5rem;
+  background: transparent;
+  border: solid 1px var(--text);
+  box-shadow: .5rem .5rem .5rem #000;
+}
+
+.menu > div:hover {
+  box-shadow: none;
+}
+
+.fa-brands {
+    font-size: 2.5rem;
+}
+
+.menu .facebook-link:hover{
+  color: #4267B2;
+   border-block-end: solid 1px transparent;
+}
+
+.menu .instagram-link:hover{
+  color: #E1306C;
+   border-block-end: solid 1px transparent;
+}
+
+.menu .whatsapp:hover{
+  color: #25D366;
+   border-block-end: solid 1px transparent;
+}
+
+footer > div{
+  display: flex;
+  min-height: 30vh;
+  align-items: center;
+  justify-content: space-evenly;
+  backdrop-filter: blur(.3rem);
+}
+
+footer > p {
+  padding: 1rem;
+  text-align: center;
+}
+
+footer > div > article {
+  display: inherit;
+  align-items: start;
+  flex-direction: column;
 }
