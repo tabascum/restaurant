@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
 
 *,
 *::after,
@@ -15,7 +15,7 @@
 
 body {
   background: fixed center url("src/img/oquintal.jpg");
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: var(--dark);
   background-size: cover;
   color: var(--text);
@@ -25,7 +25,7 @@ main {
   height: 100vh;
 }
 
-main > section > header {
+.header {
   display: flex;
   padding: 2rem 7rem;
   align-items: center;
@@ -37,36 +37,92 @@ main > section > header {
   display: flex;
 }
 
-section > article > h1 {
+.section {
+  display: flex;
+  padding: 2rem;
+  margin: 0 25rem;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(0.3rem);
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
+}
+
+.section > h1 {
   font-weight: 600;
   font-size: 5rem;
 }
 
-section > article {
-  display: flex;
-  padding: 2rem;
-  margin: 0 20rem;
-  font-size: 1.2rem;
+.section > h3 {
   font-weight: 300;
-  flex-direction: column;
-  justify-content: center;
-  backdrop-filter: blur(.3rem);
-  text-shadow: .1rem .1rem .1rem var(--dark);
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
 }
 
-a {
+.links {
   border: none;
-  transition: .5s;
+  transition: 0.5s;
   font-size: 1.3rem;
-  color: var(--text)
+  color: var(--text);
   text-decoration: none;
   background: transparent;
   border-block-end: solid 1px transparent;
 }
 
-a:hover {
+.links:hover {
   cursor: pointer;
   border-block-end: solid 1px var(--text);
+}
+
+.fa-brands {
+  font-size: 3rem;
+}
+
+.fa-phone {
+  font-size: 2.6rem;
+}
+
+.fa-phone:hover {
+  cursor: pointer;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.facebook-link:hover {
+  color: #4267b2;
+  border-block-end: solid 1px transparent;
+}
+
+.instagram-link:hover {
+  color: #e1306c;
+  border-block-end: solid 1px transparent;
+}
+
+.whatsapp:hover {
+  color: #25d366;
+  border-block-end: solid 1px transparent;
 }
 
 .menu {
@@ -78,45 +134,44 @@ a:hover {
   background: var(--dark);
 }
 
-.menu > div {
+/* .menu > div {
   padding: 2rem;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   font-size: 1.5rem;
-  background: transparent;
-  border: solid 1px var(--text);
-  box-shadow: .5rem .5rem .5rem #000;
+  text-align: end;
+  box-shadow: 0.5rem 0.5rem 0.5rem #000;
 }
 
 .menu > div:hover {
   box-shadow: none;
+} */
+
+.contacts {
+  gap: 1rem;
+  display: grid;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.fa-brands {
-    font-size: 2.5rem;
+.contacts > span {
+  display: flex;
+  align-items: start;
+  justify-content: center;
 }
 
-.menu .facebook-link:hover{
-  color: #4267B2;
-   border-block-end: solid 1px transparent;
+.contacts > span > p {
+  display: none;
 }
 
-.menu .instagram-link:hover{
-  color: #E1306C;
-   border-block-end: solid 1px transparent;
-}
-
-.menu .whatsapp:hover{
-  color: #25D366;
-   border-block-end: solid 1px transparent;
-}
-
-footer > div{
+footer > div {
   display: flex;
   min-height: 30vh;
   align-items: center;
   justify-content: space-evenly;
-  backdrop-filter: blur(.3rem);
+  backdrop-filter: blur(0.3rem);
 }
 
 footer > p {
