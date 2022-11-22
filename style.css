@@ -19,6 +19,7 @@ body {
   background-color: var(--dark);
   background-size: cover;
   color: var(--text);
+  position: relative;
 }
 
 main {
@@ -120,9 +121,16 @@ main {
   border-block-end: solid 1px transparent;
 }
 
-.whatsapp:hover {
+.whatsapp-link:hover {
   color: #25d366;
   border-block-end: solid 1px transparent;
+}
+
+.facebook-link:hover + p,
+.instagram-link:hover + p,
+.whatsapp-link:hover + p {
+  display: block;
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
 }
 
 .menu {
@@ -134,18 +142,34 @@ main {
   background: var(--dark);
 }
 
-/* .menu > div {
-  padding: 2rem;
-  cursor: pointer;
-  transition: 0.5s;
-  font-size: 1.5rem;
-  text-align: end;
-  box-shadow: 0.5rem 0.5rem 0.5rem #000;
+.aside {
+  top: 0;
+  left: 0;
+  gap: 1rem;
+  width: 40%;
+  z-index: 1;
+  display: flex;
+  padding: 1rem 0;
+  text-align: center;
+  position: absolute;
+  background: var(--dark);
+  flex-direction: column;
 }
 
-.menu > div:hover {
-  box-shadow: none;
-} */
+.hidden {
+  display: none;
+}
+
+.aside > span > a {
+  display: inline;
+  font-size: 1.5rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.ubereats:hover {
+  color: #25d366;
+}
 
 .contacts {
   gap: 1rem;
@@ -157,13 +181,15 @@ main {
 }
 
 .contacts > span {
+  gap: 0.5rem;
   display: flex;
   align-items: start;
-  justify-content: center;
 }
 
 .contacts > span > p {
-  display: none;
+  display: flex;
+  align-self: center;
+  justify-content: start;
 }
 
 footer > div {
