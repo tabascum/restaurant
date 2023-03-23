@@ -25,8 +25,8 @@
 
 <body>
 
-    <main>
-        <header class="header">
+    <main class="container">
+        <header class="container header">
             <figure>
                 <img src="./src/img/oquintal-small-logo.png" alt="">
             </figure>
@@ -37,8 +37,8 @@
         </header>
 
 
-        <section class="hero-wrapper">
-            <article class="hero">
+        <section class="container">
+            <article class="container hero">
                 <h1>O QUINTAL</h1>
                 <h3>O Quintal é um restaurante situado na Amadora onde se privilegia a partilha e o estar à mesa
                     com
@@ -62,7 +62,7 @@
         <img class="menu-cart" src="./src/img/oquintal-bebidas.jpg" alt="">
     </aside> -->
 
-    <section class="menu" id="contactos">
+    <section class="container menu" id="contactos">
         <div class="contacts">
             <span>
                 <a class="links whatsapp-link"
@@ -72,7 +72,7 @@
             </span>
             <span>
                 <i class="fa-solid fa-phone"></i>
-                <p>Ou marque 21 493 0380</p>
+                <p>Marque 21 493 0380</p>
             </span>
 
             <span>
@@ -90,31 +90,36 @@
         <div>
             <h1>Horário de funcionamento</h1>
             <p>Todos os dias entre as 12h30 e as 15h00 e entre as 19h30 e as 23h00</p>
-            <p>R. Bernardim Ribeiro 5B, Amadora</p>
+            <p>R. Bernardim Ribeiro 5B, 2700-111 Amadora</p>
         </div>
 
         <div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.2539162813873!2d-9.237165500000001!3d38.7578798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecda62b8005c3%3A0xff4cc22c3debec1b!2sR.%20Bernardim%20Ribeiro%205B%2C%202700-336%20Amadora!5e0!3m2!1spt-PT!2spt!4v1669068100408!5m2!1spt-PT!2spt"
-                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
 
     <footer>
-        <div>
-            <img src="./src/img/oquintal-medium-logo.png" alt="">
+        <div class="container footer">
+            <figure>
+                <img src="./src/img/oquintal-medium-logo.png" alt="">
+            </figure>
             <figure>
                 <h1>Com o apoio:</h1>
                 <img src="./src/img/p2020.jpg" alt="">
             </figure>
-            <article>
+            <!--  <article>
                 <a class="links" href=""><i class="fa-solid fa-chevron-right"></i> O Quintal</a>
                 <a class="links" href=""><i class="fa-solid fa-chevron-right"></i> Menções Legais</a>
-            </article>
+            </article> -->
         </div>
-        <p> &#169; O Quintal 2022 Todos os direitos reservados</p>
+        <div class="container footer_credits">
+            <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank"><img src="src/img/livroreclamacoes.png"
+                    alt="claims website link"> </a>
+            <p>O Quintal <span id="currentYear"></span> &#169; Todos os direitos reservados</p>
+        </div>
     </footer>
 </body>
 

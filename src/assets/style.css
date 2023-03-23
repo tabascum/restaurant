@@ -21,22 +21,26 @@ body {
   color: var(--text);
 }
 
-main {
+.container {
   width: 100%;
   margin: 0 auto;
+  display: flex;
+}
+
+img {
+  width: 100%;
+}
+
+main {
   max-width: 1280px;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-block-start: 2rem;
   gap: 5rem;
 }
 
 .header {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1280px;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -48,9 +52,9 @@ main {
 
 .hero {
   max-width: 80%;
-  display: inherit;
   flex-direction: column;
-  margin: 0 auto;
+  justify-content: space-between;
+  min-height: 50%;
   padding: 1.5rem;
   backdrop-filter: blur(0.7rem);
   text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
@@ -59,25 +63,25 @@ main {
 
 .hero h1 {
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "Oswald", sans-serif;
 }
 
 .hero h3 {
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .menu {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  min-height: 40vh;
+  max-width: 100%;
+  min-height: 30vh;
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
   background: var(--dark);
-  opacity: 0.9;
+  padding: 0 6rem;
+  gap: 2rem;
+  font-size: 1.2rem;
 }
 
 .links {
@@ -154,7 +158,7 @@ main {
   text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
 }
 
-.aside {
+/* .aside {
   top: 0;
   left: 0;
   gap: 1rem;
@@ -181,7 +185,7 @@ main {
 
 .ubereats:hover {
   color: #25d366;
-}
+} */
 
 .contacts {
   gap: 1rem;
@@ -204,23 +208,21 @@ main {
   justify-content: start;
 }
 
-footer > div {
-  display: flex;
-  min-height: 30vh;
+.footer {
   width: 100%;
-  margin: 0 auto;
+  min-height: 40vh;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   backdrop-filter: blur(0.3rem);
 }
 
-footer > p {
-  padding: 1rem;
+.footer_credits {
+  flex-direction: column;
   text-align: center;
+  padding-block: 1rem;
+  gap: 1.5rem;
 }
 
-footer > div > article {
-  display: inherit;
-  align-items: start;
-  flex-direction: column;
+.footer_credits img {
+  width: 10%;
 }
