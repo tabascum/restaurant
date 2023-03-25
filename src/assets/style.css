@@ -14,7 +14,7 @@
 }
 
 body {
-  background: fixed center url("../img/oquintal.jpg");
+  background: no-repeat fixed url("../img/oquintal.jpg");
   font-family: "Roboto", sans-serif;
   background-color: var(--dark);
   background-size: cover;
@@ -64,7 +64,7 @@ main {
 
 .hero h1 {
   font-weight: 600;
-  font-size: 4.5rem;
+  font-size: clamp(2.5rem, 15vw, 4rem);
   font-family: "Oswald", sans-serif;
 }
 
@@ -111,7 +111,8 @@ main {
   font-size: 2.6rem;
 }
 
-.fa-phone:hover {
+.fa-phone:hover,
+.fa.phone:focus {
   cursor: pointer;
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
   transform: translate3d(0, 0, 0);
@@ -140,17 +141,20 @@ main {
   }
 }
 
-.facebook-link:hover {
+.facebook-link:hover,
+.facebook-link:focus {
   color: #4267b2;
   border-block-end: solid 1px transparent;
 }
 
-.instagram-link:hover {
+.instagram-link:hover,
+.instagram-link:focus {
   color: #e1306c;
   border-block-end: solid 1px transparent;
 }
 
-.whatsapp-link:hover {
+.whatsapp-link:hover,
+.whatsapp-link:focus {
   color: #25d366;
   border-block-end: solid 1px transparent;
 }
