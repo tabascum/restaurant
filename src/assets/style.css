@@ -14,10 +14,12 @@
 }
 
 body {
-  background: no-repeat fixed url("../img/oquintal.jpg");
+  background: no-repeat url("../img/oquintal.jpg");
   font-family: "Roboto", sans-serif;
   background-color: var(--dark);
   background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
   color: var(--text);
 }
 
