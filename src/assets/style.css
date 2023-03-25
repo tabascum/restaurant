@@ -109,6 +109,11 @@ main {
   font-size: 3rem;
 }
 
+#phone {
+  color: var(--text);
+  text-decoration: none;
+}
+
 .fa-phone {
   font-size: 2.6rem;
 }
