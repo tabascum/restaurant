@@ -256,3 +256,9 @@ main {
     padding: 2rem;
   }
 }
+
+@media (280px < width) {
+  .menu {
+    padding-block: 2rem;
+  }
+}
