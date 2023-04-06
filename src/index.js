@@ -2,10 +2,16 @@ const menu = document.getElementById("menu");
 const aside = document.querySelector(".aside");
 
 menu.onclick = () => {
-  aside.classList.toggle("aside");
+  aside.style.display = "block";
 };
 
-//Set a dynamically changed year
+window.onclick = (e) => {
+  if (e.target == aside) {
+    aside.style.display = "none";
+  }
+};
+
+//Set a dynamically changing year
 
 const currentYear = document.querySelector("#currentYear");
 

@@ -173,34 +173,41 @@ main {
   text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
 }
 
-/* .aside {
+.aside {
   top: 0;
   left: 0;
-  gap: 1rem;
-  width: 40%;
+  width: 0;
+  height: 100%;
+  padding-top: 100px;
   z-index: 1;
-  display: flex;
-  padding: 1rem 0;
-  text-align: center;
-  position: absolute;
-  background: var(--dark);
-  flex-direction: column;
-}
-
-.hidden {
   display: none;
+  padding: 1rem;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.aside > span > a {
-  display: inline;
+.aside-content {
+  width: 50%;
+  display: block;
+  box-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
+}
+
+.aside img {
+}
+
+.aside-content a {
   font-size: 1.5rem;
   color: var(--text);
   text-decoration: none;
 }
 
+.aside-content-images span {
+}
+
 .ubereats:hover {
   color: #25d366;
-} */
+}
 
 .contacts {
   gap: 1rem;
