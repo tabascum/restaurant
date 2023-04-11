@@ -1,9 +1,8 @@
 const menu = document.getElementById("menu");
 const aside = document.querySelector(".aside");
+const content = document.querySelector(".aside-content");
 
-menu.onclick = () => {
-  aside.style.display = "block";
-};
+menu.onclick = () => (aside.style.display = "block");
 
 window.onclick = (e) => {
   if (e.target == aside) {

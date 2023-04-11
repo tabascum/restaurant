@@ -13,6 +13,10 @@
   --text: #f1f1f1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: no-repeat url("../img/oquintal.jpg");
   font-family: "Roboto", sans-serif;
@@ -176,14 +180,14 @@ main {
 .aside {
   top: 0;
   left: 0;
-  width: 0;
+  width: 100%;
   height: 100%;
-  padding-top: 100px;
-  z-index: 1;
+  z-index: 2;
   display: none;
   padding: 1rem;
   position: absolute;
   text-align: center;
+  transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
