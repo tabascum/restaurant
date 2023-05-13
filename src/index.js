@@ -1,12 +1,14 @@
+//Set the menu to display
+
 const menu = document.getElementById("menu");
 const aside = document.querySelector("aside");
-
-const content = document.querySelector(".aside-content");
 
 menu.onclick = (e) => {
   e.preventDefault();
   aside.style.display = "block";
 };
+
+// Set the menu to hide
 
 window.onclick = (e) => {
   if (e.target === aside) {
