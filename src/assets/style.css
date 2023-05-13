@@ -177,12 +177,12 @@ main {
   text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
 }
 
-.aside {
+aside {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 20;
   display: none;
   padding: 1rem;
   position: absolute;
@@ -192,21 +192,17 @@ main {
 }
 
 .aside-content {
-  width: 50%;
+  top: 2rem;
+  width: 60%;
+  height: 100%;
   display: block;
   box-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
-}
-
-.aside img {
 }
 
 .aside-content a {
   font-size: 1.5rem;
   color: var(--text);
   text-decoration: none;
-}
-
-.aside-content-images span {
 }
 
 .ubereats:hover {
