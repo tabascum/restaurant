@@ -8,7 +8,7 @@ menu.onclick = (e) => {
   aside.style.display = "block";
 };
 
-// Set the menu to hide
+// Set the menu to hide by clicking anywhere in the page
 
 window.onclick = (e) => {
   if (e.target === aside) {
