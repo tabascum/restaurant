@@ -66,7 +66,11 @@ main {
   padding: 1.5rem;
   backdrop-filter: blur(0.7rem);
   text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
+  -moz-text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
+  -webkit-text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
   box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 {
@@ -176,6 +180,8 @@ main {
 .whatsapp-link:hover + p {
   display: block;
   text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
+  -moz-text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
+  -webkit-text-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
 }
 
 aside {
@@ -198,6 +204,8 @@ aside {
   display: block;
   margin: 0 auto;
   box-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
+  -moz-box-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem var(--dark);
 }
 
 .aside-content > a {
