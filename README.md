@@ -1,4 +1,4 @@
-Restaurant website built with HTML, CSS and Vanila Javascript.
+Restaurant website built with HTML, CSS and Vanilla Javascript.
 
 Demo:
 https://tabascum.github.io/restaurant/
